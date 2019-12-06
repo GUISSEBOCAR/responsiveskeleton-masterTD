@@ -1,0 +1,45 @@
+// contient le style a afficher pour le format desktop
+// comme le style définit ici est chargé après le fichier de style tablet/global.scss, alors
+// les règles dans ce fichier (desktop/global.scss) surcharge celles définit dans tablet/global.scss
+
+body{ border: 1px solid black;
+      background-color: grey;
+  // affiche le bandeau du profiler de symfony en vert sombre
+  // je surcharge la règle '.sf-toolbarreset' définit dans 'tablet/global.scss'
+   .sf-toolbarreset{
+     background-color: #3c613c;
+   
+  }
+
+  div{
+    background-color:greenyellow;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+  }
+
+  h2{
+    font-size: 50px ;
+    text-align: center;
+    }
+
+  h3{
+    background-color: white;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+    border-bottom: 10px;
+    
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  p{
+    font-size: 5Opx;
+  }
+
+  
+}

@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<style>
+
+</style>
+
+<div>
+<ul>
+	      <h1> coucou je m'affiche !</h1>
+</ul>
+</div>
+
+<div>
+	<ul>
+		<p> ce site à pour vocation de presenter des sujets de thése</p>
+		<p>  pour d'éventuels futurs thésards en manque d'inspiration</p>
+	</ul>
+</div>
+
+<div>
+<ul>
+	<p><a href="{{path('article')}}"> Liste des Theses</a></p>
+</div>
+
+
+{% endblock %}

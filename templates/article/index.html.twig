@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticleController!{% endblock %}
+
+{% block body %}
+
+    
+<ul>
+	<h1> vous trouverez ci déssous la liste des théses</h1>
+</ul>
+
+
+
+<ul>
+	{% for ecole in ecoles %}
+	<div>
+	<p>Etablissement: {{ecole.nom|capitalize}}</p>
+    <p><a href="{{ecole.lien }} ">{{ecole.lien }}</a></p>
+
+
+
+	{% for theses in ecole.these %}
+    <h2>{{theses.titre|capitalize}}</h2>
+	<h3>{{theses.description|capitalize}}</h3>
+    <p>{{theses.contact|capitalize}}</p>
+    {% endfor %}
+	</div>
+	{% endfor %}
+
+</ul>
+
+
+
+
+{% endblock %}
